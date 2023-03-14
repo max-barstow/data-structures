@@ -77,7 +77,6 @@ class SingleLinkedList(LinkedList):
         super().__init__(SingleLink, *values)
 
 class DoubleLinkedList(LinkedList):
-
     def delete(self, value):
         node = self.search(value)
         if node:
@@ -91,7 +90,3 @@ class DoubleLinkedList(LinkedList):
 
     def __init__(self, *values):
         super().__init__(DoubleLink, *values)
-
-a = DictLinkedList(6, 1)
-a.insert(13, 2)
-print(a.search(6))
